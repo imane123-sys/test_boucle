@@ -1,12 +1,8 @@
-
 // chalenge 1:
 // let nombre_souhaite = Number(prompt("entrer un nombre que vous voulez !"));
 // for(let i=1 ;i <=10 ;i++){
 
 //     console.log(`${nombre_souhaite} x ${i} = ${nombre_souhaite * i}`)
-
-
-
 
 // }
 
@@ -14,32 +10,25 @@
 
 // let nombre_premier = Number(prompt("entrer un nombre que vous voulez !"));
 // if (nombre_premier <= 1) {
-//   console.log("le nombre premier commance a 1");
-  
+//   console.log("le nombre premier commance a 2");
+
 // } else {
 //   for (let i = 2; i <= Math.sqrt(nombre_premier); i++) {
 //     if (nombre_premier % i === 0) {
 //         console.log("ce nombre est premier");
-        
-      
-//       break; 
+
+//       break;
 //     }
 //   }
 // }
 
-
 // chalenge 3
-
 
 // for(i= 10 ;i<100 ;i++){
 
 //     Math.max
 
-
-
 // }
-
-
 
 //chalenge 4
 
@@ -51,9 +40,7 @@
 // .split("").reverse().join("");
 // console.log(nombre);
 
-
 //chalenge 5
-
 
 // let n = parseInt(prompt("Entrez un entier n :"));
 
@@ -83,32 +70,37 @@
 
 // console.log(base + "^" + exposant + " = " + resultat);
 
-
 // chalenge 7
-let somme_dix_nombres = Number(prompt("enter les 10 nombres"));
-if (somme_dix_nombres <1){
-    
+
+// let somme = 0;
+// for (i = 1; i <= 10; i++) {
+//   let nombre = Number(prompt("enter un nombre"));
+//   if (nombre > 0) {
+//     somme += nombre;
+//   }
+//   if (somme > 0) {
+//     console.log("la somme est " + somme);
+//   } else {
+//     console.log("aucun nombre positif est saisi");
+//   }
+// }
+
+// chalenge 8:
+
+let nombre = 2;
+let compteur = 0;
+let lignes_entrees = Number(prompt("enter un nombre des lignes "));
+while (compteur < lignes_entrees) {
+  let estPremier = true;
+  for (let i = 2; i < nombre; i++) {
+    if (nombre % i === 0) {
+      estPremier = false;
+    }
+  }
+
+  if (estPremier) {
+    console.log("*".repeat(nombre));
+    compteur++;
+  }
+  nombre++;
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
